@@ -19,7 +19,7 @@ A reproducible single-cell RNA-seq analysis workflow developed in R using the Se
 
 ## Please Note
 
-Sample data has been provided for demonstration purposes. The analysis scripts can be executed using R and the Seurat package. The workflow is designed to generate publication-quality visualizations and identify biologically meaningful cell populations from single-cell transcriptomic datasets.
+Sample data for single sample analysis has been provided for demonstration purposes. The analysis scripts can be executed using R and the Seurat package. 
 
 ## Multisample analysis
 Data download link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145926&utm_source=chatgpt.com
