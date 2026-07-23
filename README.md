@@ -24,6 +24,7 @@ Sample data for single sample analysis has been provided for demonstration purpo
 
 ## Cell annotation using SingleR
 Script: cell_annotation_singleR.R
+
 SingleR is an automated cell type annotation method for single-cell RNA sequencing (scRNA-seq) data. It identifies cell types by comparing the gene expression profile of each query cell to annotated reference datasets (e.g., HPCA, Blueprint, Monaco Immune) and assigns the most similar cell type label based on expression similarity.
 Pruning in SingleR: After assigning cell types, SingleR removes low-confidence or ambiguous predictions by replacing them with NA in the pruned.labels output. This helps improve annotation reliability by retaining only high-confidence cell type assignments for downstream analysis.
 
