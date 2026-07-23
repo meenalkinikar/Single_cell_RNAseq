@@ -3,7 +3,7 @@
 A reproducible single-cell RNA-seq analysis workflow developed in R using the Seurat package for quality control, normalization, dimensionality reduction, clustering, cell-type identification, and downstream transcriptomic analysis. The pipeline includes filtering low-quality cells, removal of potential doublets and high-mitochondrial-content cells, data normalization, identification of highly variable genes, principal component analysis (PCA), graph-based clustering, UMAP/t-SNE visualization, marker gene identification, and differential gene expression analysis to characterize cellular heterogeneity within complex biological samples.
 
 ## Workflow
-# Script: scnraseq_seurat_single_sample.R
+## Script: scnraseq_seurat_single_sample.R
 
 1. Data import and quality control
 2. Filtering low-quality cells and genes
@@ -23,7 +23,7 @@ A reproducible single-cell RNA-seq analysis workflow developed in R using the Se
 Sample data for single sample analysis has been provided for demonstration purposes. The analysis scripts can be executed using R and the Seurat package. 
 
 ## Cell annotation using SingleR
-# Script: cell_annotation_singleR.R
+## Script: cell_annotation_singleR.R
 SingleR is an automated cell type annotation method for single-cell RNA sequencing (scRNA-seq) data. It identifies cell types by comparing the gene expression profile of each query cell to annotated reference datasets (e.g., HPCA, Blueprint, Monaco Immune) and assigns the most similar cell type label based on expression similarity.
 Pruning in SingleR: After assigning cell types, SingleR removes low-confidence or ambiguous predictions by replacing them with NA in the pruned.labels output. This helps improve annotation reliability by retaining only high-confidence cell type assignments for downstream analysis.
 
