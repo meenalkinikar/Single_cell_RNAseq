@@ -21,8 +21,23 @@ A reproducible single-cell RNA-seq analysis workflow developed in R using the Se
 
 Sample data for single sample analysis has been provided for demonstration purposes. The analysis scripts can be executed using R and the Seurat package. 
 
-## Multisample analysis
-Data download link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145926&utm_source=chatgpt.com
+################################################################################
+
+## Cell Annotation using Single R
+
+SingleR is an automated cell type annotation method for single-cell RNA sequencing (scRNA-seq) data. It identifies cell types by comparing the gene expression profile of each query cell to annotated reference datasets (e.g., HPCA, Blueprint, Monaco Immune) and assigns the most similar cell type label based on expression similarity.
+Pruning in SingleR: After assigning cell types, SingleR removes low-confidence or ambiguous predictions by replacing them with NA in the pruned.labels output. This helps improve annotation reliability by retaining only high-confidence cell type assignments for downstream analysis.
+
+List of reference datasets from celldex:
+1. HumanPrimaryCellAtlasData
+2. BlueprintEncodeData
+3. MonacoImmuneData
+4. DatabaseImmuneCellExpressionData (DICE)
+5. NovershternHematopoieticData
+6. ImmGenData
+7. MouseRNAseqData
+
+Best Practice: Treat SingleR annotations as an initial prediction rather than the final annotation. Always validate predicted cell types using canonical marker gene expression, cluster-specific marker analysis (FindAllMarkers()), and, where possible, cross-reference with another annotation method (e.g., Azimuth, CellTypist, or manual annotation) before performing downstream analyses.
 
 
 
